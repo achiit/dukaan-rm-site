@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="theme-color" content="#100b0d">
+<meta name="description" content="R&M Industries offers affordable digital services.">
+<title>R&M Industries | Affordable Digital Services</title>
+<style>
+:root{--bg:#100b0d;--text:#fff7f7;--muted:#b9a8ac;--red:#ff5864;--line:rgba(255,255,255,.12)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--text);background:radial-gradient(ellipse at 15% 8%,rgba(180,25,47,.13),transparent 38%),radial-gradient(ellipse at 88% 65%,rgba(130,20,37,.1),transparent 35%),var(--bg);font-family:Arial,sans-serif;line-height:1.6;overflow-x:hidden}a{color:inherit;text-decoration:none}
+#particles{position:fixed;inset:0;width:100%;height:100%;z-index:0;pointer-events:none;opacity:.62}header,main,footer,.floating-whatsapp{position:relative;z-index:1}.section-wrap{width:min(1160px,calc(100% - 40px));margin:auto}
+.site-header{width:min(1240px,calc(100% - 40px));min-height:82px;margin:auto;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);position:relative;z-index:5}
+.brand{display:flex;align-items:center;gap:12px}.brand-mark{font-size:24px;font-weight:700;letter-spacing:-2px;border:1px solid rgba(255,88,100,.58);border-radius:12px;padding:5px 10px;background:rgba(255,88,100,.1)}.brand-mark span,.accent,.hero h1 span,.section-heading h2 span,.about-copy h2 span,.contact-content h2 span{color:var(--red)}
+.brand-copy{display:flex;flex-direction:column}.brand-copy strong{font-size:12px;letter-spacing:1px}.brand-copy small{color:var(--muted);font-size:8px;letter-spacing:1.5px;margin-top:4px}
+.nav-links{display:flex;align-items:center;gap:25px;font-size:13px}.nav-links a:hover,.text-link:hover{color:var(--red)}.nav-cta{border:1px solid rgba(255,88,100,.5);padding:9px 14px;border-radius:8px}.menu-toggle{display:none;color:white;background:none;border:0;font-size:26px}
+.hero{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:35px;padding:75px 0 85px;min-height:560px}.eyebrow{color:var(--red);font-size:10px;font-weight:700;letter-spacing:2px}.hero h1{font-size:clamp(46px,6vw,76px);line-height:1.05;letter-spacing:-3px;margin:22px 0}.hero-text{color:var(--muted);font-size:15px;line-height:1.9;max-width:480px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.button{display:inline-flex;align-items:center;justify-content:center;padding:13px 17px;border-radius:8px;font-size:12px;font-weight:700}.button-primary{color:#19090c;background:var(--red)}.button-ghost{border:1px solid var(--line);background:rgba(255,255,255,.03)}.hero-proof{margin-top:32px;font-size:12px}.hero-proof span{color:var(--muted)}
+.hero-art{position:relative;min-height:370px;display:grid;place-items:center}.art-core{width:210px;height:210px;border-radius:42px;display:flex;flex-direction:column;align-items:center;justify-content:center;background:linear-gradient(145deg,#3a1c25,#151014);border:1px solid rgba(255,88,100,.6);box-shadow:0 0 75px rgba(240,47,69,.18);transform:rotate(-8deg)}.core-spark{color:var(--red);font-size:28px}.core-rm{font-size:46px;font-weight:700;letter-spacing:-4px}.core-label{color:var(--muted);font-size:8px;letter-spacing:3px;margin-top:8px}.orbit{position:absolute;width:300px;height:240px;border:1px solid rgba(255,88,100,.23);border-radius:50%;transform:rotate(-25deg)}.orbit-two{width:260px;height:330px;transform:rotate(35deg);border-color:rgba(255,88,100,.13)}.floating-card{position:absolute;background:#211519;border:1px solid var(--line);border-radius:9px;padding:12px;font-size:10px}.card-top{top:35px;right:0}.card-bottom{bottom:30px;left:0}
+.ticker{padding:17px 10px;text-align:center;border-block:1px solid var(--line);background:rgba(255,255,255,.02);font-size:10px;letter-spacing:2px}.ticker span{color:var(--red);padding:0 10px}
+.services-section,.contact-section{padding:90px 0}.section-heading{display:flex;align-items:end;justify-content:space-between;gap:25px;margin-bottom:35px}.section-heading h2,.about-copy h2,.contact-content h2{font-size:clamp(36px,4.5vw,54px);line-height:1.15;letter-spacing:-2px;margin:14px 0}.section-heading>p{color:var(--muted);font-size:13px;max-width:350px}
+.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.service-card{padding:23px;border:1px solid var(--line);border-radius:14px;background:linear-gradient(145deg,rgba(255,255,255,.045),rgba(255,255,255,.015));display:flex;flex-direction:column;min-height:265px}.service-card.featured{background:linear-gradient(145deg,rgba(240,47,69,.15),rgba(255,255,255,.02));border-color:rgba(255,88,100,.4)}.service-top{display:flex;justify-content:space-between}.service-icon{width:42px;height:42px;display:grid;place-items:center;border-radius:10px;color:var(--red);background:rgba(255,88,100,.12);font-size:22px}.service-number{color:var(--muted);font-size:9px;letter-spacing:1px}.service-card h3{font-size:19px;margin:20px 0 8px}.service-card>p{color:var(--muted);font-size:12px;line-height:1.8;margin:0 0 18px}.price-row{display:flex;justify-content:space-between;border-top:1px solid var(--line);padding:13px 0;margin-top:auto}.price-row span,.video-prices span{color:var(--muted);font-size:11px}.price-row strong,.video-prices strong{color:var(--red);font-size:22px}.video-prices{margin-top:auto;margin-bottom:12px}.video-prices div{display:flex;justify-content:space-between;padding:6px 0;border-top:1px solid var(--line);font-size:11px}.service-link{display:flex;justify-content:space-between;border-top:1px solid var(--line);padding-top:13px;font-size:11px}.service-link span{color:var(--red)}.price-note{color:var(--muted);font-size:10px;margin-top:20px}
+.about-band{border-block:1px solid var(--line);background:rgba(25,13,17,.85)}.about-inner{display:grid;grid-template-columns:.7fr 1.3fr 1fr;align-items:center;gap:40px;padding:70px 0}.about-symbol{font-size:clamp(55px,7vw,85px);font-weight:700;letter-spacing:-7px}.about-copy p{color:var(--muted);font-size:12px;line-height:1.9}.social-links{display:flex;gap:12px;margin-top:20px}.text-link{font-size:12px;border-bottom:1px solid rgba(255,88,100,.4);padding-bottom:4px}.about-points{display:grid;gap:22px}.about-points strong{display:block;font-size:12px}.about-points small{color:var(--muted);font-size:10px}
+.contact-panel{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:linear-gradient(130deg,#211319,#120d10)}.contact-content{padding:40px}.contact-content p{color:var(--muted);font-size:13px;line-height:1.8;margin-bottom:25px}.contact-details{padding:35px;border-left:1px solid var(--line)}.contact-item{display:flex;gap:13px;margin-bottom:20px}.contact-icon{color:var(--red);min-width:22px}.contact-item small,.hours>small{display:block;color:var(--muted);font-size:9px;letter-spacing:1px;margin-bottom:4px}.contact-item a,.contact-item div>span{font-size:12px}.hours{border-top:1px solid var(--line);padding-top:18px;margin-top:20px}.hours p{display:flex;justify-content:space-between;font-size:10px}.hours p span{color:var(--muted)}
+.site-footer{border-top:1px solid var(--line);padding:25px 0;display:flex;justify-content:space-between;gap:20px}.site-footer p,.copyright{color:var(--muted);font-size:10px}.floating-whatsapp{position:fixed;right:22px;bottom:22px;width:52px;height:52px;border-radius:50%;display:grid;place-items:center;background:var(--red);color:#19090c;font-size:26px;box-shadow:0 5px 25px rgba(255,88,100,.3)}
+@media(max-width:850px){.hero{grid-template-columns:1fr}.service-grid{grid-template-columns:repeat(2,1fr)}.about-inner{grid-template-columns:1fr 2fr}.about-points{grid-column:1/-1;grid-template-columns:repeat(3,1fr)}}
+@media(max-width:600px){.section-wrap,.site-header{width:calc(100% - 30px)}.site-header{min-height:72px}.menu-toggle{display:block}.nav-links{display:none;position:absolute;top:72px;left:0;right:0;padding:20px;background:#190f12;border:1px solid var(--line);border-radius:10px;flex-direction:column;gap:18px}.nav-links.open{display:flex}.hero h1{font-size:48px}.hero-art{min-height:300px}.art-core{width:175px;height:175px}.orbit{width:250px;height:200px}.orbit-two{width:220px;height:270px}.section-heading{display:block}.service-grid{grid-template-columns:1fr}.about-inner{grid-template-columns:1fr}.about-points{grid-template-columns:1fr}.contact-panel{grid-template-columns:1fr}.contact-content{padding:28px 22px}.contact-details{border-left:0;border-top:1px solid var(--line);padding:28px 22px}.site-footer{display:block}.floating-whatsapp{right:14px;bottom:14px}}
+</style>
+</head>
+<body>
+<canvas id="particles"></canvas>
+
+<header class="site-header">
+<a class="brand" href="#home"><span class="brand-mark">R<span>&</span>M</span><span class="brand-copy"><strong>R&M INDUSTRIES</strong><small>CREATIVE DIGITAL SOLUTIONS</small></span></a>
+<button class="menu-toggle" aria-expanded="false">☰</button>
+<nav class="nav-links" id="navLinks">
+<a href="#services">Services</a><a href="#about">About</a><a href="#contact">Contact</a><a class="nav-cta whatsapp-link" href="#">Let's Talk ↗</a>
+</nav>
+</header>
+
+<main>
+<section class="hero section-wrap" id="home">
+<div class="hero-content">
+<div class="eyebrow">✦ CREATIVE DIGITAL SERVICES · DIAMOND HARBOUR</div>
+<h1>Your ideas.<br><span>Our creativity.</span></h1>
+<p class="hero-text">Smart digital solutions, thoughtful design, and affordable prices to help your next idea stand out.</p>
+<div class="hero-actions"><a class="button button-primary" href="#services">Explore services ↘</a><a class="button button-ghost whatsapp-link" href="#">Chat on WhatsApp ↗</a></div>
+<div class="hero-proof"><strong>Affordable by design.</strong><br><span>Fast delivery. Friendly service.</span></div>
+</div>
+<div class="hero-art"><div class="orbit"></div><div class="orbit orbit-two"></div><div class="art-core"><span class="core-spark">✳</span><span class="core-rm">R&M</span><span class="core-label">MAKE IT MATTER</span></div><div class="floating-card card-top">● DIGITAL DESIGN 01</div><div class="floating-card card-bottom">✦ Ideas into impact</div></div>
+</section>
+
+<section class="ticker">WEB DESIGN <span>✦</span> GRAPHIC DESIGN <span>✦</span> VIDEO EDITING <span>✦</span> APP DEVELOPMENT <span>✦</span> LOGO DESIGN <span>✦</span> 3D ANIMATION</section>
+
+<section class="section-wrap services-section" id="services">
+<div class="section-heading"><div><div class="eyebrow">WHAT WE DO</div><h2>Good ideas deserve<br><span>great execution.</span></h2></div><p>Choose a service to get started. Prices are starting rates; complex projects may need a custom quote.</p></div>
+<div class="service-grid">
+<article class="service-card featured"><div class="service-top"><span class="service-icon">⌘</span><span class="service-number">01 / WEB</span></div><h3>Website Design</h3><p>Modern, responsive websites to give your business a strong online presence.</p><div class="price-row"><span>Starting at</span><strong>₹899</strong></div><a class="service-link whatsapp-link" href="#">Enquire about this <span>↗</span></a></article>
+<article class="service-card"><div class="service-top"><span class="service-icon">▧</span><span class="service-number">02 / DESIGN</span></div><h3>Graphic Design</h3><p>Creative assets for your brand, social posts, and promotions.</p><div class="price-row"><span>Starting at</span><strong>₹99</strong></div><a class="service-link whatsapp-link" href="#">Enquire about this <span>↗</span></a></article>
+<article class="service-card"><div class="service-top"><span class="service-icon">▣</span><span class="service-number">03 / BUILD</span></div><h3>App Development</h3><p>Discuss your app idea and explore a solution for your needs.</p><div class="price-row"><span>Starting at</span><strong>₹2,499</strong></div><a class="service-link whatsapp-link" href="#">Enquire about this <span>↗</span></a></article>
+<article class="service-card"><div class="service-top"><span class="service-icon">▤</span><span class="service-number">04 / ONLINE</span></div><h3>Video Editing</h3><p>Clean and engaging edits for social media, business and personal projects.</p><div class="video-prices"><div><span>Short Video</span><strong>₹199</strong></div><div><span>Long Video</span><strong>₹499+</strong></div></div><a class="service-link whatsapp-link" href="#">Enquire about this <span>↗</span></a></article>
+<article class="service-card"><div class="service-top"><span class="service-icon">✦</span><span class="service-number">05 / BRAND</span></div><h3>Logo Design</h3><p>Unique logo concepts that help your brand look professional and memorable.</p><div class="price-row"><span>Starting at</span><strong>₹199</strong></div><a class="service-link whatsapp-link" href="#">Enquire about this <span>↗</span></a></article>
+<article class="service-card"><div class="service-top"><span class="service-icon">◇</span><span class="service-number">06 / 3D</span></div><h3>3D Animation</h3><p>Creative 3D visuals and animations for products, brands and presentations.</p><div class="price-row"><span>Starting at</span><strong>₹999+</strong></div><a class="service-link whatsapp-link" href="#">Enquire about this <span>↗</span></a></article>
+</div>
+<p class="price-note">* Starting prices only. Final price depends on project requirements.</p>
+</section>
+
+<section class="about-band" id="about"><div class="section-wrap about-inner"><div class="about-symbol">R<span class="accent">&</span>M</div><div class="about-copy"><div class="eyebrow">ABOUT R&M</div><h2>Small team.<br><span>Big ideas.</span></h2><p>R&M Industries provides affordable digital services for individuals, creators, students and businesses. We focus on clean design, useful technology and friendly service.</p><div class="social-links"><a class="text-link whatsapp-link" href="#">Start a project ↗</a></div></div><div class="about-points"><div><strong>01 — Affordable</strong><small>Professional work without unnecessary costs.</small></div><div><strong>02 — Creative</strong><small>Modern designs made around your idea.</small></div><div><strong>03 — Reliable</strong><small>Clear communication from start to finish.</small></div></div></div></section>
+
+<section class="section-wrap contact-section" id="contact"><div class="contact-panel"><div class="contact-content"><div class="eyebrow">LET'S WORK TOGETHER</div><h2>Have an idea?<br><span>Let's build it.</span></h2><p>Tell us what you need and we'll help you choose the right service for your project.</p><a class="button button-primary whatsapp-link" href="#">Contact us on WhatsApp ↗</a></div><div class="contact-details"><div class="contact-item"><div class="contact-icon">◉</div><div><small>WHATSAPP</small><a class="whatsapp-link" href="#">Chat with R&M Industries</a></div></div><div class="contact-item"><div class="contact-icon">⌂</div><div><small>LOCATION</small><span>Diamond Harbour, West Bengal</span></div></div><div class="contact-item"><div class="contact-icon">✦</div><div><small>SERVICES</small><span>Design · Development · Editing</span></div></div><div class="hours"><small>AVAILABILITY</small><p><span>Monday — Saturday</span><strong>10:00 AM — 8:00 PM</strong></p><p><span>Sunday</span><strong>By appointment</strong></p></div></div></div></section>
+</main>
+
+<footer class="site-footer section-wrap"><p>© 2026 R&M Industries. All rights reserved.</p><div class="copyright">Creative Digital Solutions</div></footer>
+<a class="floating-whatsapp whatsapp-link" href="#" aria-label="Chat on WhatsApp">☎</a>
+
+<script>
+const numbers=["9749097239","7477589538"];
+let clickCount=Number(localStorage.getItem("rm_whatsapp_click_count")||0);
+
+document.querySelectorAll(".whatsapp-link").forEach(link=>{
+  link.addEventListener("click",e=>{
+    e.preventDefault();
+    const number=numbers[clickCount%numbers.length];
+    clickCount++;
+    localStorage.setItem("rm_whatsapp_click_count",clickCount);
+    const message="Hi R&M Industries, I'm interested in your services.";
+    window.open("https://wa.me/91"+number+"?text="+encodeURIComponent(message),"_blank","noopener,noreferrer");
+  });
+});
+
+const menu=document.querySelector(".menu-toggle"),nav=document.querySelector(".nav-links");
+menu.addEventListener("click",()=>{const open=nav.classList.toggle("open");menu.setAttribute("aria-expanded",open)});
+document.querySelectorAll(".nav-links a").forEach(a=>a.addEventListener("click",()=>{nav.classList.remove("open");menu.setAttribute("aria-expanded","false")}));
+
+const c=document.getElementById("particles"),x=c.getContext("2d");let p=[];
+function resize(){c.width=innerWidth;c.height=innerHeight;p=Array.from({length:Math.min(70,Math.floor(innerWidth/18))},()=>({x:Math.random()*c.width,y:Math.random()*c.height,s:Math.random()*1.8+.4,dx:(Math.random()-.5)*.25,dy:(Math.random()-.5)*.25}));}
+function animate(){x.clearRect(0,0,c.width,c.height);p.forEach(a=>{a.x+=a.dx;a.y+=a.dy;if(a.x<0)a.x=c.width;if(a.x>c.width)a.x=0;if(a.y<0)a.y=c.height;if(a.y>c.height)a.y=0;x.beginPath();x.arc(a.x,a.y,a.s,0,Math.PI*2);x.fillStyle="rgba(255,88,100,.45)";x.fill()});requestAnimationFrame(animate)}
+resize();addEventListener("resize",resize);animate();
+</script>
+</body>
+</html>
